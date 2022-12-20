@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# MicroDNN
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 介绍
 
-## Commands
+**Github 仓库：<https://github.com/ethan-enhe/ANN>**
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+MicroDNN 是一个纯 cpp 实现的轻量级神经网络库，包含了经典的神经网络算法。开发的目的是便于初学者理解神经网络相关知识并上手尝试，可以训练和运行较小的模型。
 
-## Project layout
+## 特性
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- 轻量：仅 28 kb
+- 低依赖：仅依赖 Eigen 库
+- 仅头文件：仅包括一个 `.h` 文件
+- 封装良好，易于拓展
+
+## 缺点
+
+- 性能不佳（尤其是卷积运算）：基于 Eigen 实现，不支持 GPU 加速。底层优化较少，但后续会逐渐引入。
+
+## TODO
+
+-  将朴素卷积运算改成 img2col
+
+
