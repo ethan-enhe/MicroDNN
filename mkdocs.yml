@@ -22,8 +22,8 @@ markdown_extensions:
       generic: true
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.snippets:
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences
   - admonition
   - pymdownx.details
@@ -36,5 +36,15 @@ extra_javascript:
 nav:
   - 介绍: 'index.md'
   - 快速上手: 'quickstart.md'
-  # - 使用文档:
-  # - 开发文档:
+  - 用户文档:
+      - 实用函数及数据类型别名: 'user/usefulfunc.md'
+      - 网络层: 'user/layers.md'
+      - 优化器: 'user/optimizer.md'
+      - 误差函数: 'user/errfunc.md'
+      - 训练相关: 'user/train.md'
+  - 开发文档:
+      - 网络层: 'developer/layers.md'
+      - 优化器: 'developer/optimizer.md'
+      - 误差函数: 'developer/errfunc.md'
+      - 训练相关: 'developer/train.md'
+      - 实用函数: 'developer/usefulfunc.md'
