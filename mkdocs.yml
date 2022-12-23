@@ -27,7 +27,11 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
-  - pymdownx.tasklist
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true 
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
