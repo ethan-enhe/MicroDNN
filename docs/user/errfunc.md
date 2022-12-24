@@ -36,11 +36,11 @@ float crossentropy_k(const vec_batch &out, const vec_batch &label)
 float chk_2(const vec_batch &out, const vec_batch &label)
 ```
 
-用于二分类问题，返回正确率。
+用于二分类问题，返回正确率（为了统一误差函数的结果都是越小越好，这里输出正确率的相反数）。
 
 ## chk_k
 
 ```cpp
 float chk_k(const vec_batch &out, const vec_batch &label)
 ```
-用于 k 分类问题，返回正确率。
+用于 k 分类问题，返回正确率（为了统一误差函数的结果都是越小越好，这里输出正确率的相反数）。

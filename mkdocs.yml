@@ -49,6 +49,4 @@ nav:
   - 开发文档:
       - 网络层: 'developer/layers.md'
       - 优化器: 'developer/optimizer.md'
-      - 误差函数: 'developer/errfunc.md'
       - 训练相关: 'developer/train.md'
-      - 实用函数: 'developer/usefulfunc.md'
